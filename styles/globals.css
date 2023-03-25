@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body  {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  font-family: var(--font-inter);
+}
+
+:root {
+  --brand-color: #292929;
+  --brand-text-color: #ffffff;
+  --brand-color-dark-mode: #fafafa;
+  --brand-text-color-dark-mode: #292929;
+}
+
+/*
+ * Override the default tailwindcss-forms styling (default is: 'colors.blue.600')
+ * @see: https://github.com/tailwindlabs/tailwindcss-forms/issues/14#issuecomment-1005376006
+ */
+[type="text"]:focus,
+[type="email"]:focus,
+[type="url"]:focus,
+[type="password"]:focus,
+[type="number"]:focus,
+[type="date"]:focus,
+[type="datetime-local"]:focus,
+[type="month"]:focus,
+[type="search"]:focus,
+[type="tel"]:focus,
+[type="checkbox"]:focus,
+[type="radio"]:focus,
+[type="time"]:focus,
+[type="week"]:focus,
+[multiple]:focus,
+textarea:focus,
+select:focus {
+  --tw-ring-color: var(--brand-color);
+  border-color: var(--brand-color);
+}
+
+input[type='text']:focus { box-shadow: none; }
+
+/* !important to style multi-email input */
+::-moz-selection {
+  color: white;
+  background: black;
+}
+
+::selection {
+  color: white;
+  background: black;
+}
+
+@supports (-webkit-touch-callout: none) {
+  .h-screen {
+    height: -webkit-fill-available;
+  }
+}
+
+::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+}

@@ -1,0 +1,21 @@
+{
+  "translation": {
+    "error": {
+      "api": "There is no API actually",
+      "password-mismatch": "Password mismatch"
+    },
+    "password-rules": ["Mix of uppercase and lowercase letters", "Minimum 8 characters long", "Contain at least 1 number"],
+    "description": ["Nihil placeat dignissimos doloribus nihil optio id ad quisquam itaque. Architecto perferendis quia consectetur nemo quo id. Ut at dicta et odio a voluptatem. Aliquam molestiae at modi voluptas tenetur molestiae.", "Eaque ducimus aut dolor ut cupiditate deleniti. Sapiente nostrum delectus. Libero molestiae impedit ut vel expedita."],
+    "terms": ["By signing up, you agree to our ", "Terms of Service", " and ", "Privacy Policy", ". Need help? ", "Get in touch."],
+    "login-instead": "Have an account? Sign in",
+    "create-account": "Sign up",
+    "confirm-password": "Confirm password",
+    "password": "Password",
+    "email-placeholder": "johndoe@mail.com",
+    "email": "Email",
+    "username-placeholder": "John_Doe",
+    "username": "Username",
+    "create-your-account": "Sign up",
+    "sign-up": "Sign Up"
+  }
+}
