@@ -84,16 +84,17 @@ export default function Home({ prepopulateFormValues = {} }: PageProps) {
         <div
           className='flex min-h-screen flex-col justify-center bg-gray-50 py-12 sm:px-6 lg:px-8'
           aria-labelledby='modal-title'
+          aria-describedby='modal-description'
           role='dialog'
           aria-modal='true'>
           <div className='mt-8 sm:mx-auto sm:w-full sm:max-w-md'>
             <div className='mx-2 bg-white px-4 py-8 shadow sm:rounded-t-lg sm:px-10'>
               <div className='sm:mx-auto sm:w-full sm:max-w-md mb-8'>
-                <h2 className='text-center text-3xl font-extrabold text-gray-900'>
+                <h2 className='text-center text-3xl font-extrabold text-gray-900' id='modal-title'>
                   {t('create-your-account')}
                 </h2>
               </div>
-              <p className='text-sm text-gray-400'>{t('description.0')}<br/><br/>{t('description.1')}</p>
+              <p className='text-sm text-gray-400' id='modal-description'>{t('description.0')}<br/><br/>{t('description.1')}</p>
               <div className='relative mt-4'>
                 <div className='absolute inset-0 flex items-center' aria-hidden='true'>
                   <div className='w-full border-t border-gray-300'>
