@@ -44,5 +44,5 @@ export const Button = forwardRef<HTMLAnchorElement | HTMLButtonElement, any>(fun
     ...passThroughProps
   } = props;
 
-  return <button ref={forwardedRef} className={classnames(...classes, loading ? 'cursor-wait bg-gray-100' : '', className)} {...passThroughProps}>{props.children}</button>;
+  return <button ref={forwardedRef} disabled={loading} className={classnames(...classes, loading ? 'cursor-wait bg-gray-100' : '', className)} {...passThroughProps}>{props.children}</button>;
 });
